@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      max-width: 500px;
+      margin: auto;
+      border: 1px solid #ddd;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #f9b004;
+    }
+    form {
+      display: flex;
+      align-items: center;
+    }
+    input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #eee;
+      outline: none;
+    }
+    button {
+      padding: 10px 20px;
+      border: 1px solid #eee;
+      background-color: #1d9129;
+      color: #fff;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #092440;
+    }
+    button.change-color {
+      margin: 20px auto;
+      background-color: antiquewhite;
+    }
+    .dark {
+      background: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>TODO LIST</h1>
+    <form id="form">
+      <input type="text">
+      <button type="submit">Thêm</button>
+    </form>
+
+    <ul id="list"></ul>
+  </div>
+
+  <button class="change-color">Change color</button>
+  <button onclick="redirect()">Redirect</button>
+  <script src="main.js"></script>
+</body>
+</html>
